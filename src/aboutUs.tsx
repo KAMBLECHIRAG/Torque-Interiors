@@ -25,30 +25,31 @@ const AboutUs: React.FC = () => {
           </p>
         </div>
       </div>
-
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center my-30">
-        {/* Left Content Section */}
-        <div className="flex flex-col justify-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            Our Philosophy
-          </h2>
-          <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Our approach combines aesthetic excellence with practical
-            innovation, ensuring every project is a unique reflection of our
-            clients' aspirations. We don't just decorate rooms; we curate
-            experiences that enhance the way you live and work.
-          </p>
-          <div className="relative pl-6">
-            <div className="absolute left-0 top-0 bottom-0 w-1 bg-lime-500 rounded-full"></div>
-            <p className="italic text-lg text-gray-600">
-              "The best rooms have something to say about the people who live in
-              them." — Our Founding Principle.
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center py-16 px-4 md:px-8 font-sans text-gray-800">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left Content Section */}
+          <div className="flex flex-col justify-center">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+              Our Philosophy
+            </h2>
+            <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              Our approach combines aesthetic excellence with practical
+              innovation, ensuring every project is a unique reflection of our
+              clients' aspirations. We don't just decorate rooms; we curate
+              experiences that enhance the way you live and work.
             </p>
+            <div className="relative pl-6">
+              <div className="absolute left-0 top-0 bottom-0 w-1 bg-lime-500 rounded-full"></div>
+              <p className="italic text-lg text-gray-600">
+                "The best rooms have something to say about the people who live
+                in them." — Our Founding Principle.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="bg-lime-50 py-16 px-4 md:px-8 flex flex-col items-center justify-center font-sans text-gray-800">
+      <div className="min-h-screen bg-lime-50 py-16 px-4 md:px-8 flex flex-col items-center justify-center font-sans text-gray-800">
         <div className="max-w-6xl mx-auto text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 leading-tight">
             Our Core Values
@@ -147,7 +148,7 @@ const AboutUs: React.FC = () => {
         </div>
       </div>
 
-      <div className="w-10/12 mx-auto bg-gray-800 rounded-lg p-8 md:p-12 text-center shadow-lg my-2">
+      <div className="w-10/12 mx-auto bg-gray-800 rounded-lg p-8 md:p-12 text-center shadow-lg mb-2">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
           Ready to transform your space?
         </h2>

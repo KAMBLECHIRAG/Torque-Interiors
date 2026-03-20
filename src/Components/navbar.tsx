@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
             Projects
           </Link>
         </li>
-
+        
         <li className="mr-7">
           <Link
             to="/services"
@@ -52,11 +52,9 @@ const Navbar: React.FC = () => {
       </ul>
 
       {/* Consultation Button */}
-      <Link to="/contactUsPage">
-        <button className="bg-lime-500 text-white px-5 py-2 rounded-md text-base font-bold uppercase cursor-pointer hover:bg-lime-600 transition-colors">
-          Consultation
-        </button>
-      </Link>
+      <button className="bg-lime-500 text-white px-5 py-2 rounded-md text-base font-bold uppercase cursor-pointer hover:bg-lime-600 transition-colors">
+        Consultation
+      </button>
     </nav>
   );
 };
