@@ -11,9 +11,8 @@ import AboutUs from "./aboutUs";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Torque-Interiors">
       <Navbar />
-
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/portfolioHeader" element={<PortfolioHeader />} />
