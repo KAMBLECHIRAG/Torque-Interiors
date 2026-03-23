@@ -11,7 +11,10 @@ import AboutUs from "./aboutUs";
 
 function App() {
   return (
-    <Router basename="/Torque-Interiors">
+    // For test run use below Router with basename
+    // <Router basename="/Torque-Interiors">
+    // For production build
+    <Router basename="/Torque-Interiors/">
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />

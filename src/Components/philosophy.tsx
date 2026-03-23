@@ -42,10 +42,12 @@ const PhilosophySection: React.FC = () => {
         </div>
 
         {/* Right Section: Image with Quote Overlay */}
-        <div className="relative justify-self-center lg:justify-self-end">
+        <div className="relative justify-self-center lg:justify-self-end w-full max-w-md md:max-w-lg lg:max-w-xl">
+          {" "}
+          {/* Added responsive width classes */}
           {/* Main Image */}
           <div
-            className="w-150 h-150 bg-gray-300 relative overflow-hidden" // Increased size slightly to match
+            className="w-full h-80 sm:h-96 md:h-120 bg-gray-300 relative overflow-hidden" // Changed to responsive height and full width
             style={{
               backgroundImage: `url(${philosophyRoomImage})`,
               backgroundSize: "cover",
@@ -54,15 +56,8 @@ const PhilosophySection: React.FC = () => {
               outlineOffset: "16px", // Creates the border effect
             }}
           ></div>
-
           {/* Quote Overlay */}
-          <div
-            className="absolute -bottom-16 -left-16 w-60 p-6 bg-lime-200 bg-opacity-70 backdrop-blur-sm rounded-md shadow-lg"
-            style={{
-              // Using style prop for specific overlay positioning
-              transform: "translateY(-20%)", // Adjust vertical position for better visual
-            }}
-          >
+          <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 md:-bottom-16 md:-left-16 md:translate-x-0 w-60 p-6 bg-lime-200 bg-opacity-70 backdrop-blur-sm rounded-md shadow-lg">
             <p className="text-4xl font-extrabold text-lime-700 mb-2">99</p>
             <p className="text-sm italic text-gray-800">
               "Design is not just what it looks like, but how it works."

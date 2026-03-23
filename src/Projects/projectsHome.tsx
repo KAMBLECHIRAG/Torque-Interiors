@@ -66,7 +66,6 @@ const PortfolioSection: React.FC = () => {
         return <Temple />;
       case "Balcony":
         return <Balcony />;
-      case "All Projects":
       default:
       // return <AllProjectsGrid />; // This component should show a mix of projects
     }
