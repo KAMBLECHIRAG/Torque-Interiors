@@ -67,11 +67,6 @@ const Navbar: React.FC = () => {
             </Link>
           </li>
         </ul>
-
-        {/* Consultation Button */}
-        <button className="bg-lime-500 text-white px-5 py-2 rounded-md text-base font-bold uppercase cursor-pointer hover:bg-lime-600 transition-colors ml-7">
-          Consultation
-        </button>
       </div>
 
       {/* Mobile Menu Overlay */}

@@ -1,5 +1,6 @@
 import React from "react";
 import heroBackgroundImage from "../assets/frontImage.png";
+import { Link } from "react-router-dom";
 
 const HeroSection: React.FC = () => {
   return (
@@ -37,26 +38,36 @@ const HeroSection: React.FC = () => {
 
           {/* Call to Action Buttons */}
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-            <button className="flex cursor-pointer items-center justify-center px-8 py-4 bg-lime-500 text-white text-lg font-semibold rounded-md shadow-lg hover:bg-lime-600 transition-colors duration-300">
-              View Portfolio
-              <svg
-                className="ml-2 w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
-            </button>
-            <button className="px-8 py-4 border border-green-300 text-gray-200 text-lg font-semibold rounded-md shadow-lg hover:bg-gray-600 cursor-pointer transition-colors duration-300">
-              Request Consultation
-            </button>
+            <Link
+              to="/portfolioHeader"
+              className="text-gray-600 text-base no-underline hover:text-lime-600 transition-colors"
+            >
+              <button className="flex cursor-pointer items-center justify-center px-8 py-4 bg-lime-500 text-white text-lg font-semibold rounded-md shadow-lg hover:bg-lime-600 transition-colors duration-300">
+                View Portfolio
+                <svg
+                  className="ml-2 w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </button>
+            </Link>
+            <Link
+              to="/contactUsPage"
+              className="text-gray-600 text-base no-underline hover:text-lime-600 transition-colors"
+            >
+              <button className="px-8 py-4 border border-green-300 text-gray-200 text-lg font-semibold rounded-md shadow-lg hover:bg-gray-600 cursor-pointer transition-colors duration-300">
+                Request Consultation
+              </button>
+            </Link>
           </div>
         </div>
       </section>
