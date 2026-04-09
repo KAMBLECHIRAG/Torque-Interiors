@@ -1,6 +1,10 @@
 import React from "react";
 
 const Footer: React.FC = () => {
+  function getCurrentYear() {
+    return new Date().getFullYear();
+  }
+
   return (
     <footer className="bg-black text-gray-300 font-sans py-16 px-6 lg:px-12">
       {/* Top section of the footer with columns */}
@@ -21,9 +25,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Column 2: Explore Links */}
-        <div>
-         
-        </div>
+        <div></div>
 
         {/* Column 3: Legal Links */}
         <div>
@@ -60,19 +62,19 @@ const Footer: React.FC = () => {
         <div>
           <h3 className="text-lg font-semibold text-white mb-6">Office</h3>
           <p className="text-sm text-gray-400 mb-4">
-            254 Park Avenue South
+            Mumbai
             <br />
-            New York, NY 10010
+            Maharashtra, India
           </p>
           <p className="text-sm text-gray-400 mb-2">hello@torque-design.com</p>
-          <p className="text-sm text-gray-400">+1 (212) 555-0198</p>
+          <p className="text-sm text-gray-400">+91 - 9167973889</p>
         </div>
       </div>
 
       {/* Bottom section of the footer: Copyright and Social Links */}
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between pt-8">
         <p className="text-xs text-gray-500 mb-4 md:mb-0">
-          © 2024 TORQUE INTERIOR DESIGN. ALL RIGHTS RESERVED.
+          © {getCurrentYear()} TORQUE INTERIOR DESIGN. ALL RIGHTS RESERVED.
         </p>
         <div className="flex space-x-6">
           <a
