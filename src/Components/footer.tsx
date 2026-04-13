@@ -76,14 +76,6 @@ const Footer: React.FC = () => {
         <p className="text-xs text-gray-500 mb-4 md:mb-0">
           © {getCurrentYear()} TORQUE INTERIOR DESIGN. ALL RIGHTS RESERVED.
         </p>
-        <div className="flex space-x-6">
-          <a
-            href="#instagram"
-            className="text-xs font-semibold uppercase text-gray-500 hover:text-white transition-colors"
-          >
-            Instagram
-          </a>
-        </div>
       </div>
     </footer>
   );

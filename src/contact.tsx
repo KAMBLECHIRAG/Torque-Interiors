@@ -35,7 +35,6 @@ const ContactUsPage: React.FC = () => {
                     type="text"
                     id="fullName"
                     name="fullName"
-                    placeholder="John Doe"
                     className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-lime-500 focus:border-lime-500 sm:text-sm"
                   />
                 </div>
@@ -50,7 +49,6 @@ const ContactUsPage: React.FC = () => {
                     type="email"
                     id="emailAddress"
                     name="emailAddress"
-                    placeholder="john@example.com"
                     className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-lime-500 focus:border-lime-500 sm:text-sm"
                   />
                 </div>
@@ -139,9 +137,7 @@ const ContactUsPage: React.FC = () => {
                   <h3 className="text-base font-semibold text-gray-900">
                     Phone
                   </h3>
-                  <p className="mt-1 text-sm text-gray-600">
-                    +1 (555) 234-8910
-                  </p>
+                  <p className="mt-1 text-sm text-gray-600">+91-9167973889</p>
                 </div>
               </div>
 
@@ -228,7 +224,7 @@ const ContactUsPage: React.FC = () => {
                     Office
                   </h3>
                   <p className="mt-1 text-sm text-gray-600">
-                    123 Tech Plaza, Austin, TX
+                    Mumbai, Maharashtra, India
                   </p>
                 </div>
               </div>
