@@ -1,7 +1,6 @@
 import "./App.css";
 import Navbar from "./Components/navbar";
-
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./homePage";
 import Footer from "./Components/footer";
 import PortfolioHeader from "./Projects/projectsHome";
